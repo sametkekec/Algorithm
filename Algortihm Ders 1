@@ -1,0 +1,64 @@
+#include <stdio.h>
+
+int main()
+{
+        float ortalama = 3.55;
+        char harf = 'A';
+        
+        printf("kadir=%f", ortalama);
+        printf("\n");
+        printf("ortalama=%.3f",ortalama);
+        printf("\n");
+        printf("harf=%c", harf);
+        printf("\n");
+        //2.kod
+        
+        printf("Doğum yilinizi giriniz:");
+        
+        int dogumYili;
+        scanf("%d", &dogumYili);
+        printf("kullanıcı tarafından girilen doğum yili:%d",dogumYili);
+        
+        printf("\n");
+        //3. kod
+        
+        char adi[100];
+        char soyadi[100];
+        float boy, kilo;
+        printf("adinizi giriniz:");
+        scanf("%s", adi);
+        
+        printf("Soyadinizi giriniz:");
+        scanf("%s" , soyadi);
+        
+        printf("Boyunuzu metre cinsinden giriniz:");
+        scanf("%f",&boy);
+        
+        printf("Kilonuzu giriniz:");
+        scanf("%f", &kilo);
+        
+       float  boyKiloorani= (boy * 100) / kilo;
+        printf("Adi:%s,Soyadsi:%s, bki:%f", adi, soyadi, boyKiloorani);
+        
+        
+         printf("\n");
+        //4. kod
+        
+        
+        int x=5, y=10;
+        
+        printf("X giriniz:");
+        scanf("%s", &x);
+        printf("Y giriniz:");
+        scanf("%s", &y);
+        
+        printf("x=%d, y=%d\n", x,y);
+        printf("x+y = %d \n", x+y);
+        printf("x-y = %d \n", x-y);
+        printf("x*y = %d \n", x*y);
+        printf("x/y = %d \n", x/y);
+        printf("x mod y = %d \n", x%y);
+        
+        return 0;
+}
+    
