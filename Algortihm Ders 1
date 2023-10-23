@@ -5,7 +5,7 @@ int main()
         float ortalama = 3.55;
         char harf = 'A';
         
-        printf("kadir=%f", ortalama);
+        printf("samet=%f", ortalama);
         printf("\n");
         printf("ortalama=%.3f",ortalama);
         printf("\n");
@@ -58,6 +58,19 @@ int main()
         printf("x*y = %d \n", x*y);
         printf("x/y = %d \n", x/y);
         printf("x mod y = %d \n", x%y);
+         //DİĞER KOD 
+        
+        printf("\n");
+        
+         x = 20, y=50;
+        float z= 10.5,pi=3.14;
+        
+        printf("x=%d y=%d z=%.2f pi=%.2f\n",x,y);
+        printf("++x = %d \n", ++x);
+        printf("--y = %d \n", --y);
+        printf("++z = %.2f \n", ++z);
+        printf("--pi = %.2f \n", --pi);
+        
         
         return 0;
 }
