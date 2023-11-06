@@ -1,0 +1,303 @@
+   
+#include <stdio.h>
+int main()
+{
+ int tamsayı =9;
+ float ondalik;
+ char karakter= 'A';
+ char metin[50]"";
+
+  printf("%d, %c", tamsayi, karakter);
+
+  printf(" Bir ondalıklı sayı giriniz: \n");
+  scanf("%lf", &ondalik);
+
+  printf(" Bir metinsel ifade giriniz: \n");
+  scanf("%s", &metin);
+
+  printf("girilen ondalıklı sayı : %lf, girilen metinsel ifade %s", k ondalik, metin);
+
+return 0;
+}
+
+///////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+int main(){
+
+char metin3[80]="";
+
+printf("metin3 ifadesini giriniz: ");
+scanf("%s", metin3);
+printf("girilen metin3 ifadesi \"%s\" dir.", metin3);
+
+}
+
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+int main()
+{
+  printf("%zu\n", sizeof(short));
+  printf("%d\n", sizeof(int));
+  printf("%zu\n", sizeof(float));
+  printf("%zu\n", sizeof(double));
+  
+  return 0;
+}  
+
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+void main()
+{
+    int sayi=2018;
+    double ondalikli;
+    
+    printf("Bir tamsayı ve bir ondalıklı sayı giriniz: ");
+    scanf("%d, %lf", &sayi, &ondalikli);
+    
+    printf("Tamsayı: %d, Ondalıklı Sayı:%lf", sayi, ondalikli);
+}  
+
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+int main()
+{
+    typedef int tamsayi;
+    tamsayi sayi= 12;
+    printf("Tanımlanan değişken değeri = %d", sayi);
+  
+    return 0;
+}  
+  
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////  
+  
+#include <stdio.h>
+int main(){
+
+int vize=40;
+int final=60;
+
+if(vize >50 && final >50){
+    printf("Bu kişi dersi geçmiştir.");
+}
+    return 0;
+}
+
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////  
+  
+#include <stdio.h>
+int main(){
+    int x=5,y=5,z=10, sonuc;
+    sonuc =(x==y)&&(x<z);
+    printf("Sonuç 1 dir");
+    
+    sonuc =(x!=y)&&(y>z);
+    printf("%d", sonuc);
+}
+else{
+    printf("Sonuç 0 dır")
+}
+
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+int main(){
+    int x,y,z, sonuc1, sonuc2;
+    printf("x giriniz: ");
+    scanf("%d", &x);
+    printf("y giriniz: ");
+    scanf("%d", &y);
+    printf("z giriniz: ");
+    scanf("%d", &z);
+    
+    sonuc1 =(x==y)&&(x<z);
+    sonuc2 =(x!=y)&&(y>z);
+    if(sonuc1){
+        printf("%d", sonuc1);
+    }
+    else{
+     printf("%d", sonuc2);
+}
+    
+}
+
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+int main(){
+    int x, y;
+    x=5, y=6;
+    
+    printf("x=%d,y=%d\n",x,y);
+    
+    if(x==y)
+    {
+        printf("Sonuç: %d = %d", x,y);
+    }
+    else if (x>y)
+    {
+        printf("Sonuç: %d > %d", x,y);
+    }
+    else
+    {
+        printf("Sonuç: %d < %d", x,y);
+    }
+    return 0;
+}
+    
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+int main(void)
+{
+    char harfNotu;
+    printf("Harf notunuzu giriniz =");
+    scanf("%c", &harfNotu);
+    
+    switch(harfNotu)
+    {
+        case'A';
+        printf("Harf Notunuz A dır.");
+        break;
+        
+        case'B';
+        printf("Harf Notunuz B dır.");
+        break;
+        
+        case'C';
+        printf("Harf Notunuz C dır.");
+        break;
+        
+        case'D';
+        printf("Harf Notunuz D dır.");
+        break;
+        
+        case'E';
+        printf("Harf Notunuz E dır.");
+        break;
+        
+        case'F';
+        printf("Harf Notunuz F dır.");
+        break;
+        
+        default;
+        printf("Harf notunuz F dir. Kalma!");
+        break;
+    }
+    return 0;
+}
+    
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////    
+    
+#include <stdio.h>
+int main(void)
+{
+    int x; //başlangıç değeri
+    printf(" X giriniz=");
+    scanf("%d", &x);
+    
+    while(x<=5){ //bitiş kontrol şartı
+    printf("%d\n", x);
+    x++; // döngü kontrol değerini arttırma
+}
+return 0;
+}
+
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+int main(void)
+{
+    int sayi;
+    long int sayi_faktoriyel;
+    printf("Bir tam sayı giriniz:");
+    scanf("%d", &sayi);
+    
+    sayi_faktoriyel = 1;
+    while (sayi>0)
+    {
+        sayi_faktoriyel = sayi_faktoriyel*sayi;
+        printf("Anlık hesaplanan faktöriyel=%ld, anlık çarpım sayısı:=%d\n",sayi_faktoriyel, sayi);
+        sayi--;
+    }
+    
+    printf("Hesaplanan Faöktöriyel = %ld", sayi_faktoriyel);
+    return 0;
+}
+
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+int main(void)
+{
+    int x,y;
+    printf("x ve y değerlerini giriniz.");
+    scanf("%d, %d", &x,&y);
+    
+    while(x <=5)
+    {
+        printf("x=%d\n", x);
+        x++;
+    }
+    do
+    {
+        y++;
+        printf("y=%d\n", y);
+    }
+    while (y<=5);
+    
+    return 0;
+}   
+    
+//////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////// 
+    
+#include <stdio.h>
+int main(void)
+{
+    int toplam=0;
+    int x=0;
+    for (x=0; x<11; x++)
+    {
+        toplam += x;
+        printf("toplam=%d, sayac=%d\n", toplam);
+    }
+    printf("Genel toplam=%d", toplam);
+    
+    return 0;
+}  
+
+//////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////// 
+    
+#include <stdio.h>
+int main(void)
+{
+    int carpim= 1;
+    int i;
+    for(i=1; i< 10; i++);
+    {
+        carpim *=1;
+        printf("%d\n", carpim);
+    }
+    
+    return 0;
+}
+
+//////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////// 
