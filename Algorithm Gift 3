@@ -1,0 +1,108 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Soru 1: “Fibonacci Serisi” elemanları (Sayıları) aşağıdaki gibidir: N=7 seçiniz.
+
+#include <stdio.h>
+
+int main()
+{
+    int N,i;
+    int deger1= 1, deger2= 1, deger3;
+    
+    printf("N değerini atayın:");
+    scanf("%d" ,&N);
+    
+    printf(" Fibonacci serisi - %d terimli :", N);
+    printf("%d, %d", deger1, deger2);
+    
+    for (i=3; i<=N; ++i)
+    {
+        deger3 = deger1 + deger2;
+        printf("%d", deger3);
+        
+        deger1 = deger2;
+        deger2 = deger3;
+    }
+    return 0;
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// Soru 2: Kullanıcının seçimine göre haftanın gününü ekrana yazdıran programı switch ifadesini kullanarak yapınız.
+
+#include <stdio.h>
+
+int main(void)
+{
+    char sayi;
+    printf("[1,7] aralıkları arasında bir sayı giriniz: \n");
+    scanf("%c", &sayi);
+    
+    switch(sayi)
+    {
+        case '1':
+         printf("Pazartesi");
+         break;
+        case '2':
+         printf("Salı");
+         break;
+        case '3':
+         printf("Çarşamba");
+         break;
+        case '4':
+         printf("Perşembe");
+         break; 
+        case '5':
+         printf("Cuma");
+         break;
+        case '6':
+         printf("Cumartesi");
+         break; 
+        case '7':
+         printf("Pazar");
+         break;
+        default:
+         printf("Girilen sayıya uygun bir gün bulunmamaktadır.");
+         break;
+    }
+    return 0;
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//  Soru 3: Kullanıcıdan 3 tam sayı girmesini isteyiniz ve girilen tam sayılardan büyük olanı ekranda yazdırınız. 
+    
+#include <stdio.h>
+
+int main()
+{
+    int A,B,C;
+    int enBuyuk;
+    
+    printf("A Sayısını giriniz:");
+    scanf("%d", &A);
+    printf("B Sayısını giriniz:");
+    scanf("%d", &B);    
+    printf("C Sayısını giriniz:");
+    scanf("%d", &C);    
+    
+     enBuyuk = C;
+     if(A>enBuyuk)
+     {
+         enBuyuk = A;
+     }
+     if (B>enBuyuk)
+     {
+         enBuyuk = B;
+     }
+     printf("En büyük sayı : %d", enBuyuk);
+     
+     return 0;
+}
