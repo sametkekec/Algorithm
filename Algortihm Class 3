@@ -1,0 +1,78 @@
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+#include <stdio.h>
+
+int main() {
+    int dizi_sayilari[12]={87,90,50,2,45,5,7,98,12,14,79,9};
+    
+    for(int i=0; i<12; i++)
+    printf("%d. eleman = %d\n", i+1, dizi_sayilari[i]);
+
+    return 0;
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+
+int main() {
+    int dizi_puanlari[6][5]= {{3,1,0,3,1},{0,3,3,3,3},{1,0,3,1,1},{3,0,0,0,0},{0,0,1,3,3},{1,0,1,3,0}};
+    
+    char takimlar[6]={'A','B','C','D','E','F'};
+    int sampiyon=0;
+    int toplam_dizi=0;
+    
+    
+    for(int i=0; i<6; i++){
+        int toplam= 0; // toplam = 17
+        for(int j=0; j<5; j++){
+            toplam = toplam + dizi_puanlari[i][j];
+            // 17= 10+7
+        }
+        if (toplam > toplam_dizi){
+        toplam_dizi = toplam;
+        sampiyon =i;
+        }  
+    
+    }
+     printf("%s takimi %d puan ile sampiyon olmustur", takimlar[sampiyon], toplam_dizi);
+     return 0;
+}
+
+    
+    
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+
+int main() {
+    
+    int sayi;
+    printf("tamsayı giriniz: ");
+    scanf("%d", &sayi);
+    
+    int i,N,A[100],B[100],C[100];
+    printf("A dizisi kaç boyutlu olsun: ");
+    scanf("%d", N);
+    for(i=0; i<N; i++){
+        printf("A %d", i);
+        scanf("%d", &A[i]);
+    }
+        for(i=0; i<N; i++){
+        printf("A %d =", i);
+        scanf("%d", &A[i]);
+    }
+        for(i=0; i<N; i++){
+        printf("B %d =", i);
+        scanf("%d", &B[i]);
+    }
+    for(i=0; i<N; i++){
+        C[i]= A[i]+B[i];
+        printf("%d.eleman %d", i+1, C[i]);
+    }
+    return 0;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
